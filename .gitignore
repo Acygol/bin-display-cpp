@@ -33,5 +33,5 @@
 
 # Debug
 Debug/
-.vs
-.vs/bin-display/v15/Browse.VC.db
+.vs/
+*.suo
