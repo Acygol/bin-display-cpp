@@ -23,8 +23,7 @@ void LedDisplay::Print_()
 
 void LedDisplay::Pause_(std::chrono::milliseconds ms)
 {
-	using std::chrono::system_clock;
-	std::this_thread::sleep_until(system_clock::now() + std::chrono::duration_cast<std::chrono::seconds>(ms));
+	std::this_thread::sleep_for(ms);
 }
 
 bool LedDisplay::Set_(int pin, PinState state)
